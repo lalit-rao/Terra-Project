@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 const EcoRoutes = () => {
   const containerRef = useRef(null);
@@ -37,9 +38,11 @@ const EcoRoutes = () => {
         <p className="text-lg md:text-xl max-w-[60%] mx-auto text-center mt-8 text-black font-semibold">
           Plan your trips with our tool that provides routes, timings, and information on sustainable travel options and local transport.
         </p>
-        <button className="bg-blue-600 text-white font-semibold px-12 py-3 rounded-3xl mt-8">
-          Plan
-        </button>
+        <Link href="/eco-routes">
+          <button className="bg-blue-600 text-white font-semibold px-12 py-3 rounded-3xl mt-8">
+            Plan
+          </button>
+        </Link>
       </div>
     </div>
   );
