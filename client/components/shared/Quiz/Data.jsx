@@ -1,0 +1,638 @@
+const quizData = [
+  {
+    id: 1,
+    question: "What is the primary focus of sustainability?",
+    options: [
+      "Reducing waste",
+      "Maximizing profit",
+      "Increasing consumption",
+      "Exploiting natural resources",
+    ],
+    correctAnswer: "Reducing waste",
+  },
+  {
+    id: 2,
+    question: "Which of the following has the highest carbon footprint?",
+    options: [
+      "Eating beef",
+      "Riding a bicycle",
+      "Using public transportation",
+      "Turning off lights",
+    ],
+    correctAnswer: "Eating beef",
+  },
+  {
+    id: 3,
+    question: "What does the recycling symbol with a number inside represent?",
+    options: [
+      "Type of plastic",
+      "Recycling facility location",
+      "Manufacturing date",
+      "Weight of the item",
+    ],
+    correctAnswer: "Type of plastic",
+  },
+  {
+    id: 4,
+    question: "Which material is highly reusable?",
+    options: [
+      "Plastic bags",
+      "Aluminum cans",
+      "Styrofoam cups",
+      "Single-use straws",
+    ],
+    correctAnswer: "Aluminum cans",
+  },
+  {
+    id: 5,
+    question: "Which activity contributes most to reducing carbon footprint?",
+    options: [
+      "Driving a fuel-efficient car",
+      "Using disposable plates",
+      "Taking long showers",
+      "Leaving appliances on standby",
+    ],
+    correctAnswer: "Driving a fuel-efficient car",
+  },
+  {
+    id: 6,
+    question: "What is a biodegradable material?",
+    options: [
+      "Plastic bottles",
+      "Paper bags",
+      "Styrofoam containers",
+      "Glass jars",
+    ],
+    correctAnswer: "Paper bags",
+  },
+  {
+    id: 7,
+    question:
+      "Which renewable energy source is widely used for sustainability?",
+    options: ["Coal", "Solar power", "Natural gas", "Oil"],
+    correctAnswer: "Solar power",
+  },
+  {
+    id: 8,
+    question: "What is the primary goal of the circular economy?",
+    options: [
+      "Increase waste generation",
+      "Reduce resource use",
+      "Maximize landfill space",
+      "Promote fast fashion",
+    ],
+    correctAnswer: "Reduce resource use",
+  },
+  {
+    id: 9,
+    question: "Which action helps conserve water?",
+    options: [
+      "Using a dishwasher",
+      "Taking long showers",
+      "Running taps continuously",
+      "Watering the garden during the day",
+    ],
+    correctAnswer: "Using a dishwasher",
+  },
+  {
+    id: 10,
+    question: "What does 'upcycling' refer to?",
+    options: [
+      "Breaking down materials for recycling",
+      "Creating new products from waste",
+      "Using renewable energy sources",
+      "Disposing of products responsibly",
+    ],
+    correctAnswer: "Creating new products from waste",
+  },
+  {
+    id: 11,
+    question: "Which item is typically not recyclable?",
+    options: [
+      "Cardboard boxes",
+      "Plastic bags",
+      "Glass bottles",
+      "Aluminum foil",
+    ],
+    correctAnswer: "Plastic bags",
+  },
+  {
+    id: 12,
+    question: "What is a carbon footprint?",
+    options: [
+      "Amount of CO2 absorbed by forests",
+      "Total emissions of an individual or organization",
+      "A measure of energy efficiency",
+      "Quality of air in urban areas",
+    ],
+    correctAnswer: "Total emissions of an individual or organization",
+  },
+  {
+    id: 13,
+    question: "Which action supports biodiversity conservation?",
+    options: [
+      "Planting native species",
+      "Using pesticides extensively",
+      "Clearing forests for agriculture",
+      "Building urban developments",
+    ],
+    correctAnswer: "Planting native species",
+  },
+  {
+    id: 14,
+    question: "What is a common method to reduce household energy consumption?",
+    options: [
+      "Leaving lights on in unoccupied rooms",
+      "Using energy-efficient appliances",
+      "Opening windows during winter",
+      "Running appliances at peak hours",
+    ],
+    correctAnswer: "Using energy-efficient appliances",
+  },
+  {
+    id: 15,
+    question: "Which factor is NOT considered in calculating carbon footprint?",
+    options: [
+      "Energy consumption",
+      "Transportation habits",
+      "Dietary choices",
+      "Number of social media followers",
+    ],
+    correctAnswer: "Number of social media followers",
+  },
+  {
+    id: 16,
+    question: "What is a common method to reduce plastic waste?",
+    options: [
+      "Using disposable plastic cutlery",
+      "Using reusable shopping bags",
+      "Buying single-use plastic bottles",
+      "Throwing plastic in regular trash bins",
+    ],
+    correctAnswer: "Using reusable shopping bags",
+  },
+  {
+    id: 17,
+    question: "Which action contributes to deforestation?",
+    options: [
+      "Planting more trees",
+      "Logging for timber",
+      "Promoting agroforestry",
+      "Establishing protected areas",
+    ],
+    correctAnswer: "Logging for timber",
+  },
+  {
+    id: 18,
+    question: "What does the term 'zero waste' aim to achieve?",
+    options: [
+      "No waste generation at all",
+      "Reducing waste by 50%",
+      "Recycling all waste produced",
+      "Sending waste to landfills",
+    ],
+    correctAnswer: "No waste generation at all",
+  },
+  {
+    id: 19,
+    question: "Which material is biodegradable?",
+    options: ["Polystyrene", "Nylon", "Cotton", "Polyethylene"],
+    correctAnswer: "Cotton",
+  },
+  {
+    id: 20,
+    question: "What is the main benefit of using renewable energy sources?",
+    options: [
+      "Increasing carbon footprint",
+      "Reducing greenhouse gas emissions",
+      "Supporting fossil fuel industries",
+      "Generating radioactive waste",
+    ],
+    correctAnswer: "Reducing greenhouse gas emissions",
+  },
+  {
+    id: 21,
+    question: "Which activity contributes most to water pollution?",
+    options: [
+      "Proper disposal of hazardous waste",
+      "Using eco-friendly cleaning products",
+      "Dumping untreated sewage",
+      "Conserving water during drought",
+    ],
+    correctAnswer: "Dumping untreated sewage",
+  },
+  {
+    id: 22,
+    question: "What does 'LCA' stand for in environmental assessments?",
+    options: [
+      "Life Cycle Assessment",
+      "Low Carbon Action",
+      "Land Conservation Alliance",
+      "Local Climate Analysis",
+    ],
+    correctAnswer: "Life Cycle Assessment",
+  },
+  {
+    id: 23,
+    question:
+      "Which type of transportation generally has the lowest carbon footprint per passenger kilometer?",
+    options: ["Airplane", "Car", "Bus", "Bicycle"],
+    correctAnswer: "Bicycle",
+  },
+  {
+    id: 24,
+    question: "What is a common method to reduce food waste?",
+    options: [
+      "Buying excess perishable goods",
+      "Composting food scraps",
+      "Using single-use plastic containers",
+      "Throwing away leftovers",
+    ],
+    correctAnswer: "Composting food scraps",
+  },
+  {
+    id: 25,
+    question: "Which action contributes to air pollution?",
+    options: [
+      "Using electric vehicles",
+      "Burning fossil fuels",
+      "Planting more trees",
+      "Recycling plastic bottles",
+    ],
+    correctAnswer: "Burning fossil fuels",
+  },
+  {
+    id: 26,
+    question: "What is the purpose of the Paris Agreement?",
+    options: [
+      "Promote deforestation",
+      "Address climate change",
+      "Increase fossil fuel use",
+      "Reduce renewable energy production",
+    ],
+    correctAnswer: "Address climate change",
+  },
+  {
+    id: 27,
+    question:
+      "Which factor is NOT typically considered in sustainable development?",
+    options: [
+      "Economic growth",
+      "Environmental protection",
+      "Social equity",
+      "Consumerism",
+    ],
+    correctAnswer: "Consumerism",
+  },
+  {
+    id: 28,
+    question: "What does 'fair trade' aim to achieve?",
+    options: [
+      "Increase international tariffs",
+      "Support sustainable practices and fair wages",
+      "Promote monopolistic trade policies",
+      "Lower consumer prices",
+    ],
+    correctAnswer: "Support sustainable practices and fair wages",
+  },
+  {
+    id: 29,
+    question: "Which action helps reduce greenhouse gas emissions?",
+    options: [
+      "Deforestation",
+      "Implementing carbon capture and storage",
+      "Increased use of coal",
+      "Burning fossil fuels without filters",
+    ],
+    correctAnswer: "Implementing carbon capture and storage",
+  },
+  {
+    id: 30,
+    question: "What is a key principle of eco-friendly packaging?",
+    options: [
+      "Use of non-recyclable materials",
+      "Excessive use of plastic",
+      "Minimize environmental impact",
+      "Increase shipping costs",
+    ],
+    correctAnswer: "Minimize environmental impact",
+  },
+  {
+    id: 31,
+    question:
+      "Which material is commonly used in sustainable building practices?",
+    options: ["Concrete", "Steel", "Bamboo", "PVC"],
+    correctAnswer: "Bamboo",
+  },
+  {
+    id: 32,
+    question: "What is the purpose of a biodiversity hotspot?",
+    options: [
+      "Promote monoculture farming",
+      "Protect areas with high species diversity",
+      "Increase urban development",
+      "Encourage invasive species",
+    ],
+    correctAnswer: "Protect areas with high species diversity",
+  },
+  {
+    id: 33,
+    question: "Which strategy helps promote energy efficiency in buildings?",
+    options: [
+      "Using outdated appliances",
+      "Improving insulation",
+      "Ignoring energy audits",
+      "Installing inefficient lighting",
+    ],
+    correctAnswer: "Improving insulation",
+  },
+  {
+    id: 34,
+    question: "What does 'cradle to cradle' design focus on?",
+    options: [
+      "Planned obsolescence",
+      "Minimizing waste throughout a product's lifecycle",
+      "Single-use products",
+      "Exploiting natural resources",
+    ],
+    correctAnswer: "Minimizing waste throughout a product's lifecycle",
+  },
+  {
+    id: 35,
+    question:
+      "Which environmental issue is exacerbated by ocean acidification?",
+    options: [
+      "Coral reef bleaching",
+      "Increased fish populations",
+      "Reduced plastic pollution",
+      "Enhanced marine biodiversity",
+    ],
+    correctAnswer: "Coral reef bleaching",
+  },
+  {
+    id: 36,
+    question:
+      "What is the role of the United Nations Sustainable Development Goals (SDGs)?",
+    options: [
+      "Promote unsustainable practices",
+      "Address global challenges like poverty and inequality",
+      "Limit access to clean water",
+      "Increase greenhouse gas emissions",
+    ],
+    correctAnswer: "Address global challenges like poverty and inequality",
+  },
+  {
+    id: 37,
+    question: "Which practice supports sustainable agriculture?",
+    options: [
+      "Using synthetic pesticides extensively",
+      "Promoting monoculture farming",
+      "Implementing crop rotation and organic farming",
+      "Clearing forests for large-scale farming",
+    ],
+    correctAnswer: "Implementing crop rotation and organic farming",
+  },
+  {
+    id: 38,
+    question: "What is the impact of plastic pollution on marine life?",
+    options: [
+      "Promotes biodiversity",
+      "Positively affects ecosystem health",
+      "Endangers marine species through ingestion and entanglement",
+      "Increases fish populations",
+    ],
+    correctAnswer:
+      "Endangers marine species through ingestion and entanglement",
+  },
+  {
+    id: 39,
+    question: "Which factor contributes to urban heat island effect?",
+    options: [
+      "Increasing green spaces",
+      "Planting more trees",
+      "Using reflective roofing materials",
+      "High concentration of concrete and asphalt",
+    ],
+    correctAnswer: "High concentration of concrete and asphalt",
+  },
+  {
+    id: 40,
+    question: "What is the purpose of a carbon offset?",
+    options: [
+      "Increase carbon emissions",
+      "Balance carbon emissions with carbon reductions elsewhere",
+      "Promote deforestation",
+      "Ignore climate change impacts",
+    ],
+    correctAnswer: "Balance carbon emissions with carbon reductions elsewhere",
+  },
+  {
+    id: 41,
+    question: "Which action supports sustainable transportation?",
+    options: [
+      "Promoting carpooling and public transit",
+      "Encouraging single-occupancy vehicle use",
+      "Constructing more highways",
+      "Ignoring bike lanes",
+    ],
+    correctAnswer: "Promoting carpooling and public transit",
+  },
+  {
+    id: 42,
+    question: "What is the primary goal of the Montreal Protocol?",
+    options: [
+      "Increase ozone-depleting substances",
+      "Address biodiversity loss",
+      "Promote greenhouse gas emissions",
+      "Phase out ozone-depleting substances",
+    ],
+    correctAnswer: "Phase out ozone-depleting substances",
+  },
+  {
+    id: 43,
+    question:
+      "Which type of waste is hazardous and requires special disposal methods?",
+    options: [
+      "Organic waste",
+      "Biodegradable waste",
+      "Electronic waste",
+      "Recyclable waste",
+    ],
+    correctAnswer: "Electronic waste",
+  },
+  {
+    id: 44,
+    question: "What is a key feature of a sustainable city?",
+    options: [
+      "High dependence on fossil fuels",
+      "Limited access to green spaces",
+      "Efficient public transportation systems",
+      "Lack of waste management facilities",
+    ],
+    correctAnswer: "Efficient public transportation systems",
+  },
+  {
+    id: 45,
+    question: "Which type of light bulb is more energy-efficient?",
+    options: ["Incandescent", "Halogen", "Compact fluorescent (CFL)", "LED"],
+    correctAnswer: "LED",
+  },
+  {
+    id: 46,
+    question: "What is a benefit of using reusable water bottles?",
+    options: [
+      "Increases plastic waste",
+      "Promotes single-use plastic use",
+      "Reduces plastic pollution",
+      "Contributes to deforestation",
+    ],
+    correctAnswer: "Reduces plastic pollution",
+  },
+  {
+    id: 47,
+    question: "Which action helps conserve energy at home?",
+    options: [
+      "Leaving appliances on standby",
+      "Using energy-efficient appliances",
+      "Leaving windows open during winter",
+      "Running appliances at maximum capacity",
+    ],
+    correctAnswer: "Using energy-efficient appliances",
+  },
+  {
+    id: 48,
+    question: "What does 'composting' involve?",
+    options: [
+      "Burning waste materials",
+      "Recycling plastic bottles",
+      "Turning food scraps into nutrient-rich soil",
+      "Throwing away organic waste",
+    ],
+    correctAnswer: "Turning food scraps into nutrient-rich soil",
+  },
+  {
+    id: 49,
+    question: "Which renewable energy source uses the sun's energy?",
+    options: ["Wind power", "Geothermal energy", "Solar power", "Hydropower"],
+    correctAnswer: "Solar power",
+  },
+  {
+    id: 50,
+    question: "What is the purpose of wildlife conservation?",
+    options: [
+      "Increase habitat destruction",
+      "Promote hunting endangered species",
+      "Protect biodiversity and ecosystems",
+      "Increase pollution in natural habitats",
+    ],
+    correctAnswer: "Protect biodiversity and ecosystems",
+  },
+  {
+    id: 51,
+    question: "Which activity helps reduce air pollution?",
+    options: [
+      "Using coal for energy",
+      "Promoting electric vehicles",
+      "Burning fossil fuels without filters",
+      "Deforestation",
+    ],
+    correctAnswer: "Promoting electric vehicles",
+  },
+  {
+    id: 52,
+    question: "What is a benefit of planting trees?",
+    options: [
+      "Increases carbon emissions",
+      "Reduces biodiversity",
+      "Contributes to soil erosion",
+      "Absorbs CO2 and provides oxygen",
+    ],
+    correctAnswer: "Absorbs CO2 and provides oxygen",
+  },
+  {
+    id: 53,
+    question: "Which household item is recyclable?",
+    options: [
+      "Styrofoam cups",
+      "Plastic bags",
+      "Aluminum cans",
+      "Broken glass",
+    ],
+    correctAnswer: "Aluminum cans",
+  },
+  {
+    id: 54,
+    question: "What is a key feature of sustainable packaging?",
+    options: [
+      "Excessive use of plastic",
+      "Biodegradable materials",
+      "Single-use containers",
+      "Promotion of plastic waste",
+    ],
+    correctAnswer: "Biodegradable materials",
+  },
+  {
+    id: 55,
+    question: "What is a benefit of using public transportation?",
+    options: [
+      "Increases traffic congestion",
+      "Reduces greenhouse gas emissions",
+      "Promotes single-occupancy vehicle use",
+      "Raises transportation costs",
+    ],
+    correctAnswer: "Reduces greenhouse gas emissions",
+  },
+  {
+    id: 56,
+    question: "Which action helps conserve water?",
+    options: [
+      "Running sprinklers during the day",
+      "Taking shorter showers",
+      "Leaving taps running",
+      "Washing dishes without filling the sink",
+    ],
+    correctAnswer: "Taking shorter showers",
+  },
+  {
+    id: 57,
+    question: "What is the purpose of energy audits in buildings?",
+    options: [
+      "Increase energy consumption",
+      "Identify energy-efficient improvements",
+      "Promote wasteful practices",
+      "Ignore energy efficiency standards",
+    ],
+    correctAnswer: "Identify energy-efficient improvements",
+  },
+  {
+    id: 58,
+    question: "Which material is biodegradable?",
+    options: ["Glass", "Plastic", "Aluminum", "Paper"],
+    correctAnswer: "Paper",
+  },
+  {
+    id: 59,
+    question: "What is a common method to reduce plastic waste?",
+    options: [
+      "Using single-use plastic bags",
+      "Buying plastic-packaged products",
+      "Using reusable shopping bags",
+      "Throwing plastic in regular trash bins",
+    ],
+    correctAnswer: "Using reusable shopping bags",
+  },
+  {
+    id: 60,
+    question:
+      "Which factor is NOT typically considered in sustainable development?",
+    options: [
+      "Economic growth",
+      "Environmental protection",
+      "Social equity",
+      "Consumerism",
+    ],
+    correctAnswer: "Consumerism",
+  },
+];
+
+export default quizData;

@@ -1,0 +1,52 @@
+.label {
+    color: #333; /* Keep the color as is for good readability */
+    font-weight: 600; /* Maintain font weight for emphasis */
+    max-width: 75rem; /* Maximum width for label text */
+    font-size: 1.1rem; /* Slightly reduce font size for better alignment */
+    margin-bottom: 0.5rem; /* Add some space below the label */
+}
+
+.input {
+    background-color: #fff; /* White background for the input */
+    border-width: 1px; /* Border width */
+    border-color: #e2e8f0; /* Slightly lighter gray for border */
+    color: #1a202c; /* Dark text color */
+    font-size: 0.875rem; /* Maintain small text size */
+    border-radius: 0.375rem; /* Rounded corners */
+    outline: 2px solid transparent; /* Transparent outline for focus */
+    outline-offset: 2px; /* Offset for focus outline */
+    display: block; /* Block-level display */
+    width: 100%; /* Full width */
+    padding: 0.625rem 1rem; /* Adjust padding for better spacing */
+    margin-top: 0.5rem; /* Reduced top margin for spacing */
+    font-weight: 400; /* Normal font weight */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for better depth */
+    margin-bottom: 1rem; /* Add space below the input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.input:focus {
+    border-color: #3182ce; /* Lighter blue for focus border */
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.3); /* Enhanced shadow on focus */
+}
+
+.btn-big-card {
+    color: #fff; /* White text color */
+    background-image: linear-gradient(to right, #FF4B2B, #FF416C); /* Updated gradient colors for better contrast */
+    font-weight: 500; /* Medium font weight */
+    border-radius: 0.375rem; /* Rounded corners */
+    font-size: 0.875rem; /* Small font size */
+    width: fit-content; /* Adjust width based on content */
+    padding: 0.625rem 1.25rem; /* Adjust padding for a better button size */
+    text-align: center; /* Center-aligned text */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-image 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.btn-big-card:hover {
+    background-image: linear-gradient(to right, #FF416C, #FF4B2B); /* Reverse gradient on hover */
+}
+
+

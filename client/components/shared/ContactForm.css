@@ -1,0 +1,69 @@
+.btn {
+    color: #fff; /* text-white */
+    background-image: linear-gradient(to right, #FF0000, #000000); /* bg-gradient-to-r from-[#FF0000] to-[#000000] */
+    /*box-shadow: 0 0 0 4px #90cdf4; !* focus:ring-4 focus:outline-none focus:ring-blue-300 *!*/
+    font-weight: 500; /* font-medium */
+    border-radius: 0.375rem; /* rounded-lg */
+    font-size: 0.875rem; /* text-sm */
+    width: 100%; /* w-full */
+    padding: 0.625rem 1rem; /* px-5 py-2.5 */
+    /*padding: 0.625rem 1.25rem;*/
+    text-align: center; /* text-center */
+}
+
+.input {
+    background-color: #fff; /* bg-white */
+    border-width: 1px; /* border */
+    border-color: #cbd5e0; /* border-gray-200 */
+    color: #1a202c; /* text-gray-900 */
+    font-size: 0.875rem; /* text-sm */
+    border-radius: 0.375rem; /* rounded-lg */
+    outline: 2px solid transparent; /* focus:ring-blue-500 */
+    outline-offset: 2px; /* focus:border-blue-500 */
+    display: block; /* block */
+    width: 100%; /* w-full */
+    padding-top: 0.625rem; /* p-2.5 */
+    padding-bottom: 0.625rem;
+    margin-top: 0.625rem; /* mt-2.5 */
+    font-weight: 400; /* font-normal */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-card */
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.input:focus {
+    border-color: #4299e1; /* focus:ring-blue-500 and focus:border-blue-500 */
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* focus:ring-blue-500 */
+}
+
+.label {
+    color: #333; /* Replace with your desired color value */
+    font-weight: 600; /* font-weight: 600; is equivalent to font-semibold */
+    max-width: 75rem;
+    font-size: 1.2rem;
+}
+
+.contactMain {
+    max-width: 90%;
+    margin: 0 auto;/* Equivalent to max-w-5xl */
+    padding-top: 70px !important; /* Equivalent to !pt-[126px] */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+}
+
+.contactBelow {
+    flex: 1;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-gap {
+    margin-bottom: 3rem;
+}
+
+

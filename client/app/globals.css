@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.eco-finder-container {
+  background-image: url('../public/eco-finder-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 80%;
+}
+
+
+/* Add these CSS rules to your global CSS or a CSS module */
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px) scale(0.95) rotate(-5deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05) rotate(3deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.staggered-fade-in-up {
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.staggered-fade-in-up:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.staggered-fade-in-up:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.staggered-fade-in-up:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.staggered-fade-in-up:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.staggered-fade-in-up:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.staggered-fade-in-up:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Add these CSS rules to your global CSS or a CSS module */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100px) scale(0.95) rotate(-5deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10px) scale(1.05) rotate(3deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0) scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100px) scale(0.95) rotate(5deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-10px) scale(1.05) rotate(-3deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0) scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-from-left {
+  animation: slideInFromLeft 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.slide-in-from-right {
+  animation: slideInFromRight 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Add these CSS rules to your global CSS or a CSS module */
+
+@keyframes fadeInAndSlideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-slide-up {
+  animation: fadeInAndSlideUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 2s ease-out forwards;
+}
+
+
+
+
+
+/* FeatureCards.module.css */
+@keyframes staggeredFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.staggeredFadeInUp {
+  animation: staggeredFadeInUp 1s ease-out forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4caf50; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #ffffff; /* Border color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #388e3c; /* Darker color on hover */
+}
+
+/* For Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 #f5f5f5; /* Thumb color and track color */
+}
+
+/* For IE and Edge */
+.scrollbar-custom {
+  -ms-overflow-style: scrollbar;
+}
+
+
+.Navbar {
+    position: fixed;
+    z-index: 40;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+}

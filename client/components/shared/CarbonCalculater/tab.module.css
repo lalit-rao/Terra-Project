@@ -1,0 +1,163 @@
+/* tab.module.css */
+
+.tabsMainHeading {
+    color: #1e7e34;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 120px;
+}
+
+.tabsMainDescription {
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.tabsContainer {
+    margin: 1rem;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    gap: 15px
+}
+
+.tabButton {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.tabHeading {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.tabButton:hover {
+    background-color: #218838;
+}
+
+.tabButton.active {
+    background-color: #1e7e34;
+}
+
+.tabContent {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.tabForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabLabel {
+    margin-bottom: 0.5rem;
+}
+
+.tabInput {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.tabButtonSubmit {
+    background-color: #28a745;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.tabButtonSubmit:hover {
+    background-color: #218838;
+}
+
+.tabResult {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    background-color: #f9f9f9;
+}
+
+.tabError {
+    margin-top: 1rem;
+    color: red;
+}
+
+@media (min-width: 768px) {
+    .tabsContainer {
+        max-width: 80%;
+        position: relative;
+        left: 10%;
+    }
+    .tabsMainDescription {
+        max-width: 90%;
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tabsContainer {
+        max-width: 70%;
+        position: relative;
+        left: 15%;
+    }
+    .tabsMainDescription {
+        max-width: 80%;
+        position: relative;
+        left: 10%
+    }
+}
+
+@media (max-width: 768px) {
+    .tabsContainer {
+        max-width: 90%;
+        position: relative;
+        left: 5%;
+    }
+    .tabsMainDescription {
+        max-width: 95%;
+        position: relative;
+        left: 2.5%
+    }
+}
+
+@media (max-width: 600px) {
+    .tabsContainer {
+        max-width: 90%;
+        position: relative;
+        left: 2%;
+    }
+}
+
+@media (max-width: 400px) {
+    .tabsContainer {
+        max-width: 90%;
+        position: relative;
+        left: 0%;
+    }
+}
