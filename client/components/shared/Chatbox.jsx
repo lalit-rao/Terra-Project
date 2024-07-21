@@ -57,13 +57,13 @@ const Chatbox = () => {
       setMessages(prevMessages => {
         const newMessages = [...prevMessages];
         const lastMessage = newMessages[newMessages.length - 1];
-        lastMessage.message = text.slice(0, index + 1); // Use slice to update the message with substring
+        lastMessage.message = text.slice(0, index + 1);
         return newMessages;
       });
       index++;
       if (index === text.length) {
         clearInterval(intervalId);
-        setIsTyping(false); // Set typing state to false when done
+        setIsTyping(false);
       }
     }, 40);
   };
@@ -100,7 +100,7 @@ const Chatbox = () => {
             </div>
             <div className="chatbox__content--header">
               <h4 className="chatbox__heading--header">AI Assistant</h4>
-              <p className="chatbox__description--header">Hello! I'm Nova. How can I assist you today?</p>
+              <p className="chatbox__description--header">Hello! I&apos;m Nova. How can I assist you today?</p>
             </div>
           </div>
           <div className="chatbox__messages">
@@ -115,7 +115,7 @@ const Chatbox = () => {
             <button
               className="chatbox__send--footer send__button"
               onClick={onSendButton}
-              disabled={isTyping} // Disable button if bot is typing
+              disabled={isTyping}
             >Send</button>
           </div>
         </div>
