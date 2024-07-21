@@ -1,0 +1,6 @@
+torch
+torchvision
+nltk
+textblob
+flask
+flask-cors
