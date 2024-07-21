@@ -51,7 +51,7 @@ function EcoSwap() {
         <div ref={textRef} className="flex flex-col gap-6 lg:gap-8 lg:mr-11 text-center lg:text-left opacity-0">
           <div className="text-black gap-4 flex flex-col sm:pb-8 pb-0">
             <h1 className="text-3xl md:text-4xl font-bold">
-              Eco Swap
+              EcoSwap
             </h1>
             <p className="text-[#8A868C] text-sm md:text-base">
                 {/* eslint-disable-next-line react/no-unescaped-entities */}

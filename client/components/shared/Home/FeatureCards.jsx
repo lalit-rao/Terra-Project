@@ -66,10 +66,7 @@ function FeatureCards() {
         <div className="flex-1 flex flex-col md:flex-wrap justify-between gap-4 md:gap-6">
           <h1 className="text-black text-3xl md:text-2xl font-bold">
             <div className="flex flex-wrap">
-              {wrapWordsWithSpan("Carbon Footprint", "#B9FF66")}
-            </div>
-            <div className="flex flex-wrap">
-              {wrapWordsWithSpan("Analyzer", "#B9FF66")}
+              {wrapWordsWithSpan("EcoScore", "#B9FF66")}
             </div>
           </h1>
           <h2>
@@ -90,10 +87,7 @@ function FeatureCards() {
         <div className="flex-1 flex flex-col md:flex-wrap justify-between gap-4 md:gap-6">
           <h1 className="text-black text-3xl md:text-2xl font-bold">
             <div className="flex flex-wrap">
-              {wrapWordsWithSpan("Eco Travel", "#F3F3F3")}
-            </div>
-            <div className="flex flex-wrap">
-              {wrapWordsWithSpan("Planner", "#F3F3F3")}
+              {wrapWordsWithSpan("EcoRoutes", "#F3F3F3")}
             </div>
           </h1>
           <h2>
@@ -114,10 +108,7 @@ function FeatureCards() {
         <div className="flex-1 flex flex-col md:flex-wrap justify-between gap-4 md:gap-6">
           <h1 className="text-black text-3xl md:text-2xl font-bold">
             <div className="flex flex-wrap">
-              {wrapWordsWithSpan("Eco Friendly Product", "#F3F3F3")}
-            </div>
-            <div className="flex flex-wrap">
-              {wrapWordsWithSpan("Selector", "#F3F3F3")}
+              {wrapWordsWithSpan("Marketplace", "#F3F3F3")}
             </div>
           </h1>
           <h2>

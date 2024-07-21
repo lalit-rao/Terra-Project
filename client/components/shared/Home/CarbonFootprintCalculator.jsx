@@ -60,9 +60,7 @@ function CarbonFootprintCalculator() {
         <div ref={textRef} className="flex flex-col gap-6 lg:gap-8 lg:ml-11 text-center lg:text-left sm:mt-8 mt-0 pt-8 opacity-0">
           <div className="text-black gap-4 flex flex-col">
             <h1 className="text-3xl md:text-4xl font-bold">
-              Carbon Footprint
-              <br />
-              Calculator
+              EcoScore
             </h1>
             <p className="text-[#8A868C] text-sm md:text-base">
               Effortlessly understand and measure your carbon emissions with

@@ -50,7 +50,7 @@ function RecycleItemFinder() {
         <div ref={textRef} className="flex flex-col gap-6 lg:gap-8 lg:ml-11 text-center lg:text-left">
           <div className="text-black gap-4 flex flex-col">
             <h1 className="text-3xl md:text-4xl font-bold">
-              Recycle Item Finder
+              EcoSwap
             </h1>
             <p className="text-[#8A868C] text-sm md:text-base">
               Find out exactly how to recycle or repurpose various items with

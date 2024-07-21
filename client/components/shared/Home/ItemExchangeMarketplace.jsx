@@ -40,8 +40,7 @@ function ItemExchangeMarketplace() {
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
         <div ref={textRef} className="flex flex-col gap-6 lg:gap-8 lg:mr-11 text-center lg:text-left">
           <h1 className="text-3xl lg:text-4xl font-bold text-black">
-            Item Exchange <br className="hidden lg:block" />
-            Marketplace
+            Recycle Item Finder
           </h1>
           <p className="text-base lg:text-lg text-[#8A868C]">
             Connect with a community to exchange unused items through our
