@@ -132,11 +132,13 @@ body {
 .slide-in-from-left {
   animation: slideInFromLeft 1.5s ease-out forwards;
   opacity: 0;
+  overflow: hidden;
 }
 
 .slide-in-from-right {
   animation: slideInFromRight 1.5s ease-out forwards;
   opacity: 0;
+  overflow: hidden;
 }
 
 
