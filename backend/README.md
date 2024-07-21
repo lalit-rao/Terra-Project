@@ -69,6 +69,13 @@ Follow the steps below to set up and run the backend server for your project. In
 
 ## Notes
 
+- also uncomment the line in nltk_utils.py 
+for punkt
+after that run this file: 
+python nltk_utils.py,   
+
+after downloading it comment the line again
+
 - Ensure you have all the necessary packages listed in your `requirements.txt` file.
 - If you encounter any issues, make sure you have activated the virtual environment correctly.
 
