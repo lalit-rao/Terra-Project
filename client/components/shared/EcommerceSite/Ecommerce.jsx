@@ -33,7 +33,7 @@ function App() {
         },
         headers: {
           "x-rapidapi-key":
-            "b2d970b427msh5a871a7f09227b1p1f2b36jsn9b3414e03464",
+            "d2c3d2f471msh515b08e24ff0115p1c83e0jsndb5ad18e7a9f",
           "x-rapidapi-host": "real-time-amazon-data.p.rapidapi.com",
         },
       };
@@ -75,9 +75,9 @@ function App() {
   );
 
   return (
-    <div className=" text-center bg-[#F3F3F3]">
+    <div className=" text-center bg-[#F3F3F3] mt-20">
       <div className="fixed w-full flex justify-center bg-[#F3F3F3] bg-opacity-85 p-2 md:p-3 z-30">
-        <div className="flex justify-center mb-1 md:mb-4">
+        <div className="flex justify-center mb-1 md:mb-4 text-black">
           <SearchAlsoCountryCard setCountryCode={setCountryCode} />
           <input
             type="text"

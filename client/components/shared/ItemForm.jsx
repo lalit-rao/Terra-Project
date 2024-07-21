@@ -38,7 +38,7 @@ export default function ItemForm({ onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 text-black">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-xl font-semibold mb-4">Sell Your Item</h2>
         <form onSubmit={handleSubmit} className="space-y-4">

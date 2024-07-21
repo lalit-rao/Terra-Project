@@ -208,6 +208,55 @@
         "Redirecting your focus involves recognizing when you’re overthinking and actively choosing to engage in other activities. Create a structured routine that includes breaks and time for hobbies or interests. Mindfulness and relaxation techniques can help calm your mind and reduce the intensity of overthinking.",
         "Managing overthinking is a process that involves both mental and physical strategies. Regular mindfulness practice, engaging in physical activities, and addressing underlying emotional issues with a therapist can help. Building a balanced routine that includes self-care and relaxation time can also be effective in reducing overthinking."
       ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Greetings",
+        "hi"
+      ],
+      "responses": [
+        "Hi there! Thanks for visiting the Terra Website. What can I help you with?",
+        "Hey! It's great to see you here. How can I make your experience with Terra better?",
+        "Greetings! You're at the right place for all things sustainability. How can I assist you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Talk to you later",
+        "Catch you later",
+        "See you soon"
+      ],
+      "responses": [
+        "Goodbye! Thanks for visiting. We hope to see you again soon.",
+        "See you later! Have a great day ahead. Don't forget to check out our upcoming features.",
+        "Catch you later! It was great having you here. Keep exploring."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "Thanks a bunch",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome! Happy to help with any information you need about sustainability",
+        "Glad I could assist you! If you have more questions, feel free to ask.",
+        "You're welcome! Don't hesitate to reach out if you need more information.",
+        "My pleasure! Always here to help you with anything."
+      ]
     }
   ]
 }
