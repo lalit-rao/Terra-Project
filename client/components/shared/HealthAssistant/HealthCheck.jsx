@@ -160,7 +160,7 @@ function HealthCheck() {
     };
 
     return (
-        <div className="container mx-auto my-200px flex h-auto flex-col lg:flex-row ">
+        <div className="container mx-auto my-200px flex h-auto flex-col lg:flex-row mt-40">
             <div className="left w-full lg:w-1/2 bg-white flex flex-col justify-center p-8">
                 <div className="header mb-8">
                     <h2 className="text-4xl font-bold text-green-600">
